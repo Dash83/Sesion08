@@ -3,4 +3,16 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="AlarmLabels">
+        <item>Never</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>30 min</item>
+    </string-array>
+    <string-array name="AlarmValues">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Settings">
+        <CheckBoxPreference
+            android:key="TASKS_ORDER"
+            android:title="Tasks Order"
+            android:summary="Ascending Order"
+            android:defaultValue="true" />
+        <ListPreference android:title="Alarm"
+            android:entries="@array/AlarmLabels"
+            android:entryValues="@array/AlarmValues"
+            android:key="ALARM" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <PreferenceScreen android:key="PRIVACY"
+            android:title="Privacy Policy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.iteso.marco.sesion08.PrivacyPolicyActivity"
+                android:targetPackage="com.iteso.marco.sesion08"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:key="EULA"
+            android:title="EULA">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="com.iteso.marco.sesion08.EULAActivity"
+                android:targetPackage="com.iteso.marco.sesion08"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

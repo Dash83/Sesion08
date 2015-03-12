@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            startSettingsActivity();
         }
 
         if (id == R.id.action_logout)
@@ -64,6 +64,12 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    private void startSettingsActivity()
+    {
+        Intent intent = new Intent(this, PreferenceActivity.class);
+        startActivity(intent);
     }
 
 }
